@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.video-responsive {
+  display: none;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.box {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: red;
+  border: 40px;
+  margin-top: 2rem;
+ 
+}
+.box1 {
+  height: auto;
+  width: auto;
+  background-color: transparent;
   color: white;
+  font-family:'Roboto',sans-serif;
+  text-align: center;
+ 
+
+}
+.boxWord{
+  padding-top: 35px;
+  font-size: 60px;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Bebas Neue', cursive;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.boxWord1{
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+  margin-left: 1rem;
+  background-color: transparent;
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .exitButton{
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: gray;
+  text-align:center;
+  transition: all 0.2s;
   }
-  to {
-    transform: rotate(360deg);
+  .exitButton:hover{
+  color:#000000;
+  background-color:#FFFFFF;
   }
+
+
+.videoButton {
+  height: 80px;
+  width: 100vw;
+  color: black;
+  border-radius: 30px;
+  border: 40px;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 1rem;
+  background-color: white;
+  scroll-snap-align: end;
 }
+
+.videoTitle {
+  font-size: 40px;
+ 
+  color: white;
+  font-family:'Roboto',sans-serif;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  
+
+
+}
+.mainContainer {
+  
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.videoContainer{
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+
+.box {
+  scroll-snap-align: start;
+ 
+  position: relative;
+  height: 100vh;
+}
+
+
+
+
